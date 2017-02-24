@@ -13,11 +13,11 @@
   $bgcolor: #000;
   $bgcolor-2: #333;
 {% elsif site.mytheme == "rosievilla" %}
-  $color: #33dd00;
-  $color-2: #11bb00;
-  $linkcolor: #33ff33;
-  $bgcolor: rgba(42, 0, 42, 0.7);
-  $bgcolor-2: rgba(14, 0, 14, 0.5);
+  $color: #FF8800;
+  $color-2: #FF6600;
+  $linkcolor: #ff9900;
+  $bgcolor: rgba(0, 0, 99, 0.7);
+  $bgcolor-2: rgba(0, 0, 99, 0.7);
 {% endif %}
 
 //
@@ -385,6 +385,7 @@ body {
 }
 .promo .title {
   font-size: 65px;
+  text-outline: 2px 2px #000099;
   color: $color;
   margin-top: 0;
 }
@@ -404,6 +405,29 @@ body {
 }
 .highlight {
   color: $color-2 !important;
+  text-shadow:
+  /* Outline */
+  -3px -3px 0 $bgcolor,
+  3px -3px 0 $bgcolor,
+  -3px 3px 0 $bgcolor,
+  3px 3px 0 $bgcolor,
+  -4px 0 0 $bgcolor,
+  4px 0 0 $bgcolor,
+  0 4px 0 $bgcolor,
+  0 -4px 0 $bgcolor;
+}
+.highlight2 {
+  color: $color-2 !important;
+  text-shadow:
+  /* Outline */
+  -1px -1px 0 $bgcolor,
+  1px -1px 0 $bgcolor,
+  -1px 1px 0 $bgcolor,
+  1px 1px 0 $bgcolor,
+  -1px 0 0 $bgcolor,
+  1px 0 0 $bgcolor,
+  0 1px 0 $bgcolor,
+  0 -1px 0 $bgcolor;
 }
 .promo .social-icons a {
     display: inline-block;
