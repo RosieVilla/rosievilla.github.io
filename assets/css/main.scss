@@ -17,7 +17,7 @@
   $color-2: #FF6600;
   $linkcolor: #ff9900;
   $bgcolor: rgba(0, 0, 99, 0.7);
-  $bgcolor-2: rgba(0, 0, 99, 0.7);
+  $bgcolor-2: rgba(0, 0, 55, 0.7);
 {% endif %}
 
 //
@@ -406,28 +406,11 @@ body {
 .highlight {
   color: $color-2 !important;
   text-shadow:
-  /* Outline */
-  -3px -3px 0 $bgcolor,
-  3px -3px 0 $bgcolor,
-  -3px 3px 0 $bgcolor,
-  3px 3px 0 $bgcolor,
-  -4px 0 0 $bgcolor,
-  4px 0 0 $bgcolor,
-  0 4px 0 $bgcolor,
-  0 -4px 0 $bgcolor;
-}
-.highlight2 {
-  color: $color-2 !important;
-  text-shadow:
-  /* Outline */
-  -1px -1px 0 $bgcolor,
-  1px -1px 0 $bgcolor,
-  -1px 1px 0 $bgcolor,
-  1px 1px 0 $bgcolor,
-  -1px 0 0 $bgcolor,
-  1px 0 0 $bgcolor,
-  0 1px 0 $bgcolor,
-  0 -1px 0 $bgcolor;
+  1px 1px 2px $bgcolor-2,
+  0 0 0.1em $bgcolor,
+  0 0 0.2em $bgcolor,
+  0 0 0.3em $bgcolor,
+  0 0 0.4em $bgcolor;
 }
 .promo .social-icons a {
     display: inline-block;
@@ -479,4 +462,9 @@ body {
 .features .form-inline {
   margin-top: 10px;
 }
-
+html{
+  color: $color-2;
+  text-shadow:
+  1px 1px 2px $bgcolor-2,
+  0 0 0.1em $bgcolor,
+}

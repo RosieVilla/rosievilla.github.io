@@ -24,7 +24,7 @@
    <div class="post single">
   {% unless page.title_hidden %}
     <h1 class="highlight">{{ page.title }}</h1>
-    <info class="highlight2" datetime="{{ page.date | date: "%Y-%m-%d" }}">
+    <info class="highlight" datetime="{{ page.date | date: "%Y-%m-%d" }}">
       {{ page.date | date: "%b %d, %Y" }}
     </info>
     {% endunless %}
