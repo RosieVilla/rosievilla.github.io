@@ -13,22 +13,30 @@
   $bgcolor: #000;
   $bgcolor-2: #333;
 {% elsif site.mytheme == "rosievilla" %}
-  $color: #000000;
-  $color-2: #000000;
-  $linkcolor: #1111FF;
-  $bgcolor: rgba(255,255,255, 1);
-  $bgcolor-2: rgba(255,255,255, 1);
+  $color: #FFFFFF;
+  $color-2: #FFFFFF;
+  $linkcolor: #DDDDDD;
+  $bgcolor: rgba(0, 0, 0, 0.7);
+  $bgcolor-2: rgba(5, 5, 5, 0.7);
 {% endif %}
 
 //
 // Import partials from `_sass` folder
 //
 
-@import "print";
+@import "midnite";
 
 //
 // Insert custom css below this line
 //
+
+button, input, select, optgroup {
+    background: $bgcolor;
+    color: $color;
+    background-color: $bgcolor;
+    border: 1px solid;
+    border-color: $bgcolor;
+}
 
 .full-width {
   margin: 0 -9999rem;
